@@ -70,7 +70,7 @@ class Processor:
 
 # ---- Simulation ---- #
 class DisinfoSimulator:
-    def __init__(self, npc_data, disinformation_events, event_timeline, total_ticks=24, disinformers_per_tick=100, conversion_threshold=0.05):
+    def __init__(self, npc_data, disinformation_events, event_timeline, total_ticks=24, disinformers_per_tick=2, conversion_threshold=0.05):
         self.trust = npc_data['trust']
         self.influence = npc_data['influencial_score']
         self.network = npc_data['network_score']
@@ -150,6 +150,16 @@ class DisinfoSimulator:
         for tick in range(self.total_ticks):
             self.simulate_tick(tick)
             time.sleep(1)
+
+        # Final summary
+        final_avg_trust = float(np.mean(self.trust))
+        total_converted = int(np.sum(self.trust < self.conversion_threshold))
+        print("\n========= Final Summary =========")
+        print(f"Total NPCs: {self.num_npcs}")
+        print(f"Final Average Trust: {final_avg_trust:.4f}")
+        print(f"Total Converted NPCs (Trust < {self.conversion_threshold}): {total_converted}")
+        print("=================================")
+
         return self.logs
 
 # ---- Simulation Config ---- #
