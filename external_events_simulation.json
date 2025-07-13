@@ -1,0 +1,804 @@
+[
+  {
+    "tick": 0,
+    "day": 1,
+    "total_events": 2,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.8,
+        "resistance": 0.2,
+        "disinformers": 100,
+        "converted_disinformers": 0,
+        "interactions": 1001,
+        "ingroup_interactions": 758,
+        "outgroup_interactions": 243,
+        "new_conversions": 0,
+        "trust_change": -0.0002061607875263327,
+        "trust_delta_stats": {
+          "mean": -0.00020616078752620995,
+          "min": -0.04854327965088255,
+          "max": 0.0
+        },
+        "event_id": 0
+      },
+      {
+        "strength": 0.6,
+        "resistance": 0.3,
+        "disinformers": 150,
+        "converted_disinformers": 0,
+        "interactions": 1388,
+        "ingroup_interactions": 1042,
+        "outgroup_interactions": 346,
+        "new_conversions": 0,
+        "trust_change": -0.0002113593291152016,
+        "trust_delta_stats": {
+          "mean": -0.0002113593291152583,
+          "min": -0.04647638735056376,
+          "max": 0.0
+        },
+        "event_id": 1
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5989005219850904,
+      "total_converted": 0,
+      "total_interactions": 2389,
+      "total_ingroup_interactions": 1800,
+      "total_outgroup_interactions": 589,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 1,
+    "day": 2,
+    "total_events": 1,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.7,
+        "resistance": 0.4,
+        "disinformers": 200,
+        "converted_disinformers": 0,
+        "interactions": 1962,
+        "ingroup_interactions": 1482,
+        "outgroup_interactions": 480,
+        "new_conversions": 0,
+        "trust_change": -0.00037452297008711,
+        "trust_delta_stats": {
+          "mean": -0.0003745229700871831,
+          "min": -0.05428371623316851,
+          "max": 0.0
+        },
+        "event_id": 0
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5985259990150033,
+      "total_converted": 0,
+      "total_interactions": 1962,
+      "total_ingroup_interactions": 1482,
+      "total_outgroup_interactions": 480,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 2,
+    "day": 3,
+    "total_events": 2,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.5,
+        "resistance": 0.5,
+        "disinformers": 300,
+        "converted_disinformers": 0,
+        "interactions": 2951,
+        "ingroup_interactions": 2224,
+        "outgroup_interactions": 727,
+        "new_conversions": 0,
+        "trust_change": -0.0003816193753409802,
+        "trust_delta_stats": {
+          "mean": -0.000381619375340771,
+          "min": -0.04188969643905755,
+          "max": 0.0
+        },
+        "event_id": 0
+      },
+      {
+        "strength": 0.4,
+        "resistance": 0.6,
+        "disinformers": 250,
+        "converted_disinformers": 0,
+        "interactions": 2381,
+        "ingroup_interactions": 1789,
+        "outgroup_interactions": 592,
+        "new_conversions": 0,
+        "trust_change": -0.00021284351573047644,
+        "trust_delta_stats": {
+          "mean": -0.00021284351573063156,
+          "min": -0.025526291783914898,
+          "max": 0.0
+        },
+        "event_id": 1
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5979315361239318,
+      "total_converted": 0,
+      "total_interactions": 5332,
+      "total_ingroup_interactions": 4013,
+      "total_outgroup_interactions": 1319,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 3,
+    "day": 4,
+    "total_events": 2,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.8,
+        "resistance": 0.2,
+        "disinformers": 100,
+        "converted_disinformers": 0,
+        "interactions": 1067,
+        "ingroup_interactions": 811,
+        "outgroup_interactions": 256,
+        "new_conversions": 0,
+        "trust_change": -0.00022993268376225728,
+        "trust_delta_stats": {
+          "mean": -0.00022993268376230886,
+          "min": -0.048213370009918904,
+          "max": 0.0
+        },
+        "event_id": 0
+      },
+      {
+        "strength": 0.6,
+        "resistance": 0.3,
+        "disinformers": 150,
+        "converted_disinformers": 0,
+        "interactions": 1599,
+        "ingroup_interactions": 1213,
+        "outgroup_interactions": 386,
+        "new_conversions": 0,
+        "trust_change": -0.00026598738856897786,
+        "trust_delta_stats": {
+          "mean": -0.0002659873885689311,
+          "min": -0.03826350620283094,
+          "max": 0.0
+        },
+        "event_id": 1
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5974356160516006,
+      "total_converted": 0,
+      "total_interactions": 2666,
+      "total_ingroup_interactions": 2024,
+      "total_outgroup_interactions": 642,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 4,
+    "day": 5,
+    "total_events": 1,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.7,
+        "resistance": 0.4,
+        "disinformers": 200,
+        "converted_disinformers": 0,
+        "interactions": 2042,
+        "ingroup_interactions": 1549,
+        "outgroup_interactions": 493,
+        "new_conversions": 0,
+        "trust_change": -0.00040571121099064467,
+        "trust_delta_stats": {
+          "mean": -0.0004057112109906136,
+          "min": -0.050866216301270306,
+          "max": 0.0
+        },
+        "event_id": 0
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5970299048406099,
+      "total_converted": 0,
+      "total_interactions": 2042,
+      "total_ingroup_interactions": 1549,
+      "total_outgroup_interactions": 493,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 5,
+    "day": 6,
+    "total_events": 2,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.5,
+        "resistance": 0.5,
+        "disinformers": 300,
+        "converted_disinformers": 0,
+        "interactions": 3072,
+        "ingroup_interactions": 2332,
+        "outgroup_interactions": 740,
+        "new_conversions": 0,
+        "trust_change": -0.0003855887908501554,
+        "trust_delta_stats": {
+          "mean": -0.00038558879085017004,
+          "min": -0.039449361953501696,
+          "max": 0.0
+        },
+        "event_id": 0
+      },
+      {
+        "strength": 0.4,
+        "resistance": 0.6,
+        "disinformers": 250,
+        "converted_disinformers": 0,
+        "interactions": 2399,
+        "ingroup_interactions": 1805,
+        "outgroup_interactions": 594,
+        "new_conversions": 0,
+        "trust_change": -0.0002097389713744402,
+        "trust_delta_stats": {
+          "mean": -0.00020973897137442234,
+          "min": -0.020366441909623865,
+          "max": 0.0
+        },
+        "event_id": 1
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5964345770783853,
+      "total_converted": 0,
+      "total_interactions": 5471,
+      "total_ingroup_interactions": 4137,
+      "total_outgroup_interactions": 1334,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 6,
+    "day": 7,
+    "total_events": 2,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.8,
+        "resistance": 0.2,
+        "disinformers": 100,
+        "converted_disinformers": 0,
+        "interactions": 929,
+        "ingroup_interactions": 699,
+        "outgroup_interactions": 230,
+        "new_conversions": 0,
+        "trust_change": -0.0001790535854216957,
+        "trust_delta_stats": {
+          "mean": -0.00017905358542172638,
+          "min": -0.05839172939629035,
+          "max": 0.0
+        },
+        "event_id": 0
+      },
+      {
+        "strength": 0.6,
+        "resistance": 0.3,
+        "disinformers": 150,
+        "converted_disinformers": 0,
+        "interactions": 1509,
+        "ingroup_interactions": 1141,
+        "outgroup_interactions": 368,
+        "new_conversions": 0,
+        "trust_change": -0.0002323638955384899,
+        "trust_delta_stats": {
+          "mean": -0.00023236389553846803,
+          "min": -0.035840800817983645,
+          "max": 0.0
+        },
+        "event_id": 1
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5960231595974251,
+      "total_converted": 0,
+      "total_interactions": 2438,
+      "total_ingroup_interactions": 1840,
+      "total_outgroup_interactions": 598,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 7,
+    "day": 8,
+    "total_events": 1,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.7,
+        "resistance": 0.4,
+        "disinformers": 200,
+        "converted_disinformers": 0,
+        "interactions": 1988,
+        "ingroup_interactions": 1499,
+        "outgroup_interactions": 489,
+        "new_conversions": 0,
+        "trust_change": -0.0003791624747643274,
+        "trust_delta_stats": {
+          "mean": -0.0003791624747643889,
+          "min": -0.0693160418673984,
+          "max": 0.0
+        },
+        "event_id": 0
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5956439971226608,
+      "total_converted": 0,
+      "total_interactions": 1988,
+      "total_ingroup_interactions": 1499,
+      "total_outgroup_interactions": 489,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 8,
+    "day": 9,
+    "total_events": 2,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.5,
+        "resistance": 0.5,
+        "disinformers": 300,
+        "converted_disinformers": 0,
+        "interactions": 2897,
+        "ingroup_interactions": 2187,
+        "outgroup_interactions": 710,
+        "new_conversions": 0,
+        "trust_change": -0.00036696219383924866,
+        "trust_delta_stats": {
+          "mean": -0.00036696219383918524,
+          "min": -0.03563771912296154,
+          "max": 0.0
+        },
+        "event_id": 0
+      },
+      {
+        "strength": 0.4,
+        "resistance": 0.6,
+        "disinformers": 250,
+        "converted_disinformers": 0,
+        "interactions": 2463,
+        "ingroup_interactions": 1853,
+        "outgroup_interactions": 610,
+        "new_conversions": 0,
+        "trust_change": -0.0002145986151893542,
+        "trust_delta_stats": {
+          "mean": -0.00021459861518935373,
+          "min": -0.02333562390418536,
+          "max": 0.0
+        },
+        "event_id": 1
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5950624363136322,
+      "total_converted": 0,
+      "total_interactions": 5360,
+      "total_ingroup_interactions": 4040,
+      "total_outgroup_interactions": 1320,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 9,
+    "day": 10,
+    "total_events": 2,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.8,
+        "resistance": 0.2,
+        "disinformers": 100,
+        "converted_disinformers": 0,
+        "interactions": 1018,
+        "ingroup_interactions": 768,
+        "outgroup_interactions": 250,
+        "new_conversions": 0,
+        "trust_change": -0.00023978737308549825,
+        "trust_delta_stats": {
+          "mean": -0.0002397873730855587,
+          "min": -0.048924948180439076,
+          "max": 0.0
+        },
+        "event_id": 0
+      },
+      {
+        "strength": 0.6,
+        "resistance": 0.3,
+        "disinformers": 150,
+        "converted_disinformers": 0,
+        "interactions": 1439,
+        "ingroup_interactions": 1081,
+        "outgroup_interactions": 358,
+        "new_conversions": 0,
+        "trust_change": -0.00022060503511456275,
+        "trust_delta_stats": {
+          "mean": -0.0002206050351145419,
+          "min": -0.03791164113986502,
+          "max": 0.0
+        },
+        "event_id": 1
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5946020439054321,
+      "total_converted": 0,
+      "total_interactions": 2457,
+      "total_ingroup_interactions": 1849,
+      "total_outgroup_interactions": 608,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 10,
+    "day": 11,
+    "total_events": 1,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.7,
+        "resistance": 0.4,
+        "disinformers": 200,
+        "converted_disinformers": 0,
+        "interactions": 1961,
+        "ingroup_interactions": 1477,
+        "outgroup_interactions": 484,
+        "new_conversions": 0,
+        "trust_change": -0.00040046231381796193,
+        "trust_delta_stats": {
+          "mean": -0.0004004623138178807,
+          "min": -0.042658580356591196,
+          "max": 0.0
+        },
+        "event_id": 0
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5942015815916142,
+      "total_converted": 0,
+      "total_interactions": 1961,
+      "total_ingroup_interactions": 1477,
+      "total_outgroup_interactions": 484,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 11,
+    "day": 12,
+    "total_events": 2,
+    "total_converted_npcs": 0,
+    "events": [
+      {
+        "strength": 0.5,
+        "resistance": 0.5,
+        "disinformers": 300,
+        "converted_disinformers": 0,
+        "interactions": 2815,
+        "ingroup_interactions": 2113,
+        "outgroup_interactions": 702,
+        "new_conversions": 0,
+        "trust_change": -0.0003425914992744028,
+        "trust_delta_stats": {
+          "mean": -0.0003425914992744316,
+          "min": -0.04536074543443158,
+          "max": 0.0
+        },
+        "event_id": 0
+      },
+      {
+        "strength": 0.4,
+        "resistance": 0.6,
+        "disinformers": 250,
+        "converted_disinformers": 0,
+        "interactions": 2523,
+        "ingroup_interactions": 1909,
+        "outgroup_interactions": 614,
+        "new_conversions": 0,
+        "trust_change": -0.0002399364929336345,
+        "trust_delta_stats": {
+          "mean": -0.00023993649293363873,
+          "min": -0.03233519885345547,
+          "max": 0.0
+        },
+        "event_id": 1
+      }
+    ],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 5338,
+      "total_ingroup_interactions": 4022,
+      "total_outgroup_interactions": 1316,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 12,
+    "day": 13,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 13,
+    "day": 14,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 14,
+    "day": 15,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 15,
+    "day": 16,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 16,
+    "day": 17,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 17,
+    "day": 18,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 18,
+    "day": 19,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 19,
+    "day": 20,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 20,
+    "day": 21,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 21,
+    "day": 22,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 22,
+    "day": 23,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 23,
+    "day": 24,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 24,
+    "day": 25,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 25,
+    "day": 26,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 26,
+    "day": 27,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 27,
+    "day": 28,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 28,
+    "day": 29,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  },
+  {
+    "tick": 29,
+    "day": 30,
+    "total_events": 0,
+    "total_converted_npcs": 0,
+    "events": [],
+    "daily_summary": {
+      "avg_trust": 0.5936190535994061,
+      "total_converted": 0,
+      "total_interactions": 0,
+      "total_ingroup_interactions": 0,
+      "total_outgroup_interactions": 0,
+      "total_new_conversions": 0
+    }
+  }
+]
