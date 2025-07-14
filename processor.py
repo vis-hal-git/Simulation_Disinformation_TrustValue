@@ -5,7 +5,6 @@ from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
 import logging
 
-# Configure logging to replace print statements
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -15,7 +14,7 @@ class SimulationConfig:
     total_npcs: int = 100000
     total_ticks: int = 20
     conversion_threshold: float = 0.05
-    max_trust_delta_per_tick: float = 0.01  # Very small for gradual trust erosion
+    max_trust_delta_per_tick: float = 0.04   # 25 people force a point of view
     age_influence_sigma: float = 15.0
     age_network_sigma: float = 20.0
     max_influence_score: float = 100.0
@@ -137,22 +136,11 @@ class TrustDynamics:
         Returns:
             Trust delta (always negative or zero)
         """
-        # Probability of message reception based on resistance and current trust
         reception_probability = np.clip(100 + (event.resistance - receiver_trust * 100), 0, 100)
-        
-        # Normalize influence to 0-1 range
         normalized_influence = sender_influence / self.config.max_influence_score
-        
-        # Group trust modifier - same group messages are more trusted
         modifier = group_trust_modifier if same_group else 1.0
-        
-        # Calculate trust delta (always negative)
         delta = -(reception_probability / 100.0) * (event.strength - receiver_trust / 4.0) * normalized_influence * modifier
-        
-        # Apply global trust erosion multiplier
         delta *= trust_erosion_multiplier
-        
-        # Ensure delta is negative or zero
         return min(0, delta)
     
     def apply_trust_deltas(self, trust_array: np.ndarray, deltas: np.ndarray) -> np.ndarray:
@@ -187,23 +175,16 @@ class GroupCommunicationManager:
             ingroup_bias = self.config.ingroup_communication_bias
             
         total_npcs = len(all_groups)
-        
-        # Calculate how many targets should be from same group
         ingroup_targets = int(num_targets * ingroup_bias)
         outgroup_targets = num_targets - ingroup_targets
-        
-        # Find same group members (excluding sender)
         same_group_mask = (all_groups == sender_group)
         same_group_ids = np.where(same_group_mask)[0]
         same_group_ids = same_group_ids[same_group_ids != sender_id]
-        
-        # Find different group members
         diff_group_ids = np.where(~same_group_mask)[0]
         
         targets = []
         same_group_flags = []
-        
-        # Select ingroup targets
+
         if len(same_group_ids) > 0 and ingroup_targets > 0:
             selected_ingroup = np.random.choice(
                 same_group_ids, 
@@ -213,7 +194,7 @@ class GroupCommunicationManager:
             targets.extend(selected_ingroup)
             same_group_flags.extend([True] * len(selected_ingroup))
         
-        # Select outgroup targets
+
         if len(diff_group_ids) > 0 and outgroup_targets > 0:
             selected_outgroup = np.random.choice(
                 diff_group_ids, 
@@ -223,7 +204,7 @@ class GroupCommunicationManager:
             targets.extend(selected_outgroup)
             same_group_flags.extend([False] * len(selected_outgroup))
         
-        # If we couldn't fill targets due to group constraints, fill randomly
+
         if len(targets) < num_targets:
             remaining_needed = num_targets - len(targets)
             all_available = np.setdiff1d(np.arange(total_npcs), [sender_id] + targets)
@@ -342,16 +323,13 @@ class DisinformationSimulator:
                 else:
                     outgroup_interactions += 1
         
-        # Apply trust deltas
         old_trust_mean = np.mean(self.trust)
         self.trust = self.trust_dynamics.apply_trust_deltas(self.trust, trust_deltas)
         
-        # Update converted NPCs
         newly_converted = set(np.where(self.trust < self.config.conversion_threshold)[0])
         new_conversions = newly_converted - self.converted_npcs
         self.converted_npcs = newly_converted
         
-        # Return event processing results
         return {
             "strength": event.strength,
             "resistance": event.resistance,
@@ -437,9 +415,8 @@ class DisinformationSimulator:
         for tick in range(total_ticks):
             daily_events = external_events.get(tick, [])
             self.simulate_tick(tick, daily_events, **event_processing_kwargs)
-            time.sleep(0.1)  # Small delay for readability
-        
-        # Generate final summary
+            time.sleep(0.1)
+
         final_stats = self._generate_final_summary()
         self._log_final_summary(final_stats)
         
@@ -457,7 +434,7 @@ class DisinformationSimulator:
     
     def _generate_final_summary(self) -> Dict:
         """Generate comprehensive final statistics"""
-        # Group statistics
+
         group_stats = {}
         unique_groups = np.unique(self.group_ids)
         for group_id in unique_groups:
@@ -781,7 +758,7 @@ def create_sample_events() -> Dict[int, List[DisinformationEvent]]:
 def main():
     """Example usage of the simulation system"""
     
-    # Create configuration
+
     config = SimulationConfig(
         total_npcs=50000,
         total_ticks=30,
@@ -791,20 +768,19 @@ def main():
         random_seed=42
     )
     
-    # Generate NPCs with custom parameters
+
     logger.info("Generating NPCs...")
     npc_generator = NPCGenerator(config)
     npc_data = npc_generator.generate_npcs(
         npc_count=config.total_npcs,
-        age_based_ratio=0.6,  # 60% age-based, 40% random
+        age_based_ratio=0.6,
         trust_range=(0.3, 0.9),  # Higher initial trust
         num_groups=config.num_groups
     )
     
-    # Create external events (in real usage, this would come from external system)
+
     external_events = create_sample_events()
     
-    # Run simulation
     simulator = DisinformationSimulator(npc_data, config)
     logs = simulator.run_simulation(
         external_events,
@@ -813,7 +789,6 @@ def main():
         ingroup_bias=0.8                # Higher ingroup preference
     )
     
-    # Save logs to file
     with open('external_events_simulation.json', 'w') as f:
         json.dump(logs, f, indent=2)
     
