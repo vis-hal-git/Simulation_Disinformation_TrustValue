@@ -1,0 +1,1 @@
+simulation_id,tick,trust_min,trust_max,trust_mean,trust_median,trust_std,trust_q25,trust_q75,trust_below_01,trust_below_02,trust_below_05,trust_above_08,trust_above_09,gini_coefficient

@@ -1,0 +1,2 @@
+simulation_id,export_timestamp,total_npcs,total_groups,total_ticks,final_avg_trust,total_converted,overall_conversion_rate,total_events,total_interactions,total_ingroup_interactions,total_outgroup_interactions,avg_ingroup_ratio,most_converted_group,least_converted_group,trust_range,final_gini_coefficient
+experiment_001,2025-07-23T23:41:17.417842,50000,10,14,0.38258775171874926,9756,0.19512,210,1212905,915906,296999,0.7551341613729022,1,4,0.0-1.0,0.0

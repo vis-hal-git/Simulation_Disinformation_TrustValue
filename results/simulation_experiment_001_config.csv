@@ -1,0 +1,13 @@
+simulation_id,parameter,value,category
+experiment_001,total_npcs,50000,NPC_Config
+experiment_001,age_influence_sigma,15.0,NPC_Config
+experiment_001,age_network_sigma,20.0,NPC_Config
+experiment_001,max_influence_score,100.0,NPC_Config
+experiment_001,max_network_score,100.0,NPC_Config
+experiment_001,num_groups,10,NPC_Config
+experiment_001,random_seed,42,NPC_Config
+experiment_001,total_ticks,14,Simulation_Config
+experiment_001,conversion_threshold,0.05,Simulation_Config
+experiment_001,max_trust_delta_per_tick,0.07,Simulation_Config
+experiment_001,network_targeting_divisor,5,Simulation_Config
+experiment_001,ingroup_communication_bias,0.7,Simulation_Config
